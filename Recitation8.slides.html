@@ -12151,9 +12151,11 @@ void main(){
         return 1
     else
         return n * fact(n-1)</code></pre>
-<p>$F  = (iszero\ n) 1 (multiply\ n\ (F\ (pred\ n))$</p>
-<p>$fact\ 3 = (\textsf {Y} F) 3$</p>
-<p>$= F(...(\textsf {Y} F)) 3$</p>
+<p>$f  = (iszero\ n) 1 (multiply\ n\ (f\ (pred\ n))$</p>
+<p>$F\ f\ n  = (iszero\ n) 1 (multiply\ n\ (f\ (pred\ n))$</p>
+<p>$\textsf {Y}\ F\ n = F (\textsf {Y}\ F)\ n $</p>
+<p>$ = (iszero\ n) 1 (multiply\ n\ (\textsf {Y}\ F\ (pred\ n)) $</p>
+<p>$\textsf {Y}\ F\ n = F\ (F\ ...(\textsf {Y}\ F)\ n$</p>
 
 </div>
 </div>
